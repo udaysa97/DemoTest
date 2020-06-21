@@ -1,0 +1,51 @@
+
+
+
+input:checked + label + .content{
+	display: block;	
+}
+
+label::after{
+	content:'\21E8';
+	position: absolute;
+	right:1%;
+}
+
+input:checked + label::after{
+	content: '\21E9';
+
+}
+
+input[type=checkbox]:checked + #arrow{
+
+	display: none;
+	
+
+}
+
+.content{
+	display: none;
+	background-color: skyblue;
+	margin-top:-15px;
+	margin-bottom: -33px;
+}
+
+
+input{
+	display:none;
+}
+
+label{
+	display: inline-block;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: purple;
+	padding:3px;
+	color: white;
+}
+
+label:hover{
+	background-color: blue;
+}
+
